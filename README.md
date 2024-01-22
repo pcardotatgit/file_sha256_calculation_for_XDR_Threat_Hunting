@@ -1,14 +1,18 @@
 # Create a sha256 list 
 
-The goal of this script is to calculate the sha256 of all the files that will be stored into the **./files_to_check** subfolder.
+The goal of this script is to calculate the sha256 of all the files that are stored into the **./files_to_check** subfolder.
 
 Why do we have to do that ?... The answer is : for querying Cisco Talos for file reputations thru XDR APIs.
 
-And we can achieve this either thanks to a dedicated script like the script shared here : [check Observables dispositions in CTR from an observable list](https://github.com/pcardotatgit/check_observable_dispositions_in_CTR_from_an_observable_list) 
+And we can achieve this either thanks to a dedicated script like the script shared here : 
 
-Or thanks the XDR Ribbon plugin. And this is the reason why the output of this script is an HTML file. This is to be able to open the HTML result just by clicking on it and then invoke the XDR plugin.
+[check Observables dispositions in CTR from an observable list](https://github.com/pcardotatgit/check_observable_dispositions_in_CTR_from_an_observable_list) 
 
-A typical use case would be the following. Let's imagine that you browse the INTERNET in order to find a document or a nice freeware that do something you need to do. Then instead of downloading the tool and run it, what you can do is to download it into a temporary folder and then run the script in order to ask to TALOS if the files contained into the folder are known as malicious or not.
+Or thanks the **XDR Ribbon plugin**. And this is the reason why the output of this script is an HTML file ( index.html ). This is to be able to open the HTML result just by clicking on it and then invoke the XDR plugin within the browser in order to know which files are known as malicious..
+
+A typical use case would be the following. Let's imagine that you browse the INTERNET in order to find a document or a nice freeware that do something you qbsolutely need. Then instead of downloading the tool and run it, what you can do is to download it first into a temporary folder ( into a temporary sandbox ) and then run the script in order to ask to TALOS if the files contained into the folder are known as malicious or not.
+
+The shared script does the half of the job actually.
 
 The role of the current script is to calculate the sha256 footprints of every files contained into the **./files_to_check** subfolder.
 
