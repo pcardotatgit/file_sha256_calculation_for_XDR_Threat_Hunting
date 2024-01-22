@@ -37,6 +37,6 @@ This one will create a resulting file that is an html file named **index.html** 
 
 Finally the script runs a web server that listen on port 8888.
 
-Then, you can either from your laptop open the **index.html** file, Or from another endpoint launch a browser and open http://your_sandbox_ip:8888
+Then, you can either from your laptop open the **index.html** file, Or from another endpoint launch a browser and open **http://your_sandbox_ip:8888**
 
 Then you will see the sha256 list in the page and you can start the Browser's XDR Ribbon plugin and the mailicious files will appear after a few seconds.
